@@ -1,0 +1,9 @@
+@media (min-width: 700px) {
+  .container {
+    width: 100vw;
+  }
+  .board {
+    padding: 2rem 4rem;
+    margin: 5rem 35rem;
+  }
+}

@@ -1,0 +1,177 @@
+@import "mainStyle.css";
+
+/* mobile design  */
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 10fr;
+  color: var(--color-plain);
+  text-transform: uppercase;
+}
+header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.icon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.right {
+  align-self: end;
+}
+.circle {
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  border: solid;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  border-width: 0.2rem;
+  box-shadow: 1px 5px 0px rgb(0 0 0);
+}
+.c1 {
+  grid-column: 2/4;
+  grid-row: 2/2;
+}
+.c2 {
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+.c3 {
+  grid-column: 2/4;
+  grid-row: 3/3;
+}
+.c4 {
+  grid-column: 3/4;
+  grid-row: 4/3;
+}
+.pink {
+  background-color: var(--color-pink);
+}
+.yellow {
+  background-color: var(--color-yellow);
+}
+.navbar {
+  background-color: var(--color-bg-dark);
+  padding: 0.6rem 1rem;
+  text-align: center;
+  margin: 1rem;
+  border: none;
+  border-radius: 0.9rem;
+  font-weight: 700;
+}
+.scoreboard {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0.5rem;
+}
+.player {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  color: var(--color-black);
+  align-self: center;
+}
+.icon1 {
+  height: 8vh;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  z-index: 1;
+}
+.icon2 {
+  height: 8vh;
+  grid-column: 50/4;
+  grid-row: 1/2;
+  z-index: 1;
+}
+.score {
+  border: solid;
+  border-width: 0.2rem;
+  box-shadow: 1px 5px 0px rgb(0 0 0);
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.playerOneScore {
+  background-color: var(--color-plain);
+  align-self: center;
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+.playerTwoScore {
+  background-color: var(--color-plain);
+  color: var(--color-black);
+  align-self: center;
+  grid-column: 2/5;
+  grid-row: 1/2;
+}
+
+h3 {
+  font-size: 0.5rem;
+  font-weight: 700;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0.6rem;
+  height: 500px;
+  background-color: var(--color-plain);
+  border: solid;
+  border-width: 0.2rem;
+  border-color: var(--color-black);
+  box-shadow: 1px 5px 0px rgb(0 0 0);
+  border-radius: 1.5rem;
+}
+.tile {
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+  background-color: var(--color-bg);
+  border-radius: 50%;
+  border: solid;
+  border-width: 0.2rem;
+  border-color: var(--color-black);
+  box-shadow: 0px -4px 0 rgb(0, 0, 0);
+}
+.red-piece {
+  background-color: var(--color-pink);
+}
+.yellow-piece {
+  background-color: var(--color-yellow);
+}
+
+.winner {
+  padding: 1rem;
+  /* background-color: var(--color-plain); */
+  margin: 2rem 2rem;
+  color: var(--color-plain);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  /* border-bottom: 70px var(--color-yellow) solid; */
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-radius: 10%;
+}

@@ -1,0 +1,32 @@
+:root {
+  --color-bg: rgba(121, 69, 255, 255);
+  --color-bg-dark: rgba(92, 45, 213, 255);
+  --color-pink: rgba(253, 102, 135, 255);
+  --color-yellow: rgba(255, 206, 103, 255);
+  --color-plain: rgba(255, 255, 255, 255);
+  --color-black: rgba(0, 0, 0, 255);
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a,
+a::before,
+a::after {
+  text-decoration: none;
+  font-style: none;
+  color: var(--color-plain);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  box-sizing: border-box;
+}

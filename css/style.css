@@ -1,0 +1,125 @@
+:root {
+  --color-bg: rgba(121, 69, 255, 255);
+  --color-bg-dark: rgba(92, 45, 213, 255);
+  --color-pink: rgba(253, 102, 135, 255);
+  --color-yellow: rgba(255, 206, 103, 255);
+  --color-plain: rgba(255, 255, 255, 255);
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a,
+a::before,
+a::after {
+  text-decoration: none;
+  font-style: none;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg);
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.right {
+  align-self: end;
+}
+.circle {
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  border: solid;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  border-width: 0.2rem;
+  box-shadow: 1px 5px 0px rgb(0 0 0);
+}
+.c1 {
+  grid-column: 2/4;
+  grid-row: 2/2;
+}
+.c2 {
+  grid-column: 3/4;
+  grid-row: 2/2;
+}
+.c3 {
+  grid-column: 2/4;
+  grid-row: 3/3;
+}
+.c4 {
+  grid-column: 3/4;
+  grid-row: 4/3;
+}
+.pink {
+  background-color: var(--color-pink);
+}
+.yellow {
+  background-color: var(--color-yellow);
+}
+.items {
+  margin: 0;
+  padding: 0;
+  margin: 1rem;
+}
+.list-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  border: solid;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 1px 5px 0px rgb(0 0 0);
+  transition: transform 0.5s ease-in-out;
+}
+.list-group:hover {
+  transform: scale(1.1);
+}
+.mode1 {
+  background-color: var(--color-pink);
+}
+.mode2 {
+  background-color: var(--color-yellow);
+}
+.option {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-plain);
+}
+h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.img {
+  height: 2em;
+  object-fit: contain;
+}
